@@ -1,0 +1,18 @@
+forth-morse-translator
+======================
+
+A morse code translator.
+
+* encodes text to morse (letters A-Z)
+* encodes digits
+* decode morse back to text
+
+Morse format
+------------
+
+    .    dot
+    -    dash
+    ' '  gap between letters
+    ' / ' gap between words
+
+Example: "HI YOU" -> ".... .. / -.-- --- ..-"
