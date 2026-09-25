@@ -36,3 +36,4 @@
     [char] ? emit ;
 
 : from-morse ( "morse<eol>" -- ) begin parse-name dup while .code repeat 2drop cr ;
+: to-morse ( "text<eol>" -- ) 0 parse bounds ?do i c@ .char loop cr ;
