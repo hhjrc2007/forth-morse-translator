@@ -1,18 +1,23 @@
 forth-morse-translator
 ======================
 
-A morse code translator.
+Morse code translator that encodes text to morse and decodes it back.
 
-* encodes text to morse (letters A-Z)
-* encodes digits
-* decode morse back to text
+* encodes letters (A-Z) and digits (0-9)
+* decodes morse back to text
+* words separated by ' / '
 
-Morse format
-------------
+Usage
+-----
 
-    .    dot
-    -    dash
-    ' '  gap between letters
-    ' / ' gap between words
+Load the code from the repository root:
 
-Example: "HI YOU" -> ".... .. / -.-- --- ..-"
+	gforth src/morse.fs
+
+Encode text to morse:
+
+	to-morse Hi you 42
+
+Decode morse to text:
+
+	from-morse .... .. / -.-- --- ..-
